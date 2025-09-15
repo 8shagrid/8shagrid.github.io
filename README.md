@@ -2,7 +2,7 @@
 
 Ini adalah source code untuk website portofolio pribadi saya, yang menampilkan pengalaman kerja, proyek, dan keahlian saya di bidang Analisis Data.
 
-**[Lihat Live Demo 🚀](https://portfolio-dirgahalimsusilo.github.io)**
+**[Lihat Live Demo 🚀](https://8shagrid.github.io)**
 
 ---
 
