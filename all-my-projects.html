@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All My Projects - Dirga Halim Susilo</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300 font-sans">
+
+    <nav class="sticky top-0 z-50 w-full shadow-sm backdrop-blur-lg bg-white/70 dark:bg-gray-900/70">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html#home" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">DHS</a>
+
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html#home" class="hover:text-indigo-600 dark:hover:text-indigo-400">Home</a>
+                    <a href="index.html#experience" class="hover:text-indigo-600 dark:hover:text-indigo-400">Experience</a>
+                    <a href="index.html#projects" class="hover:text-indigo-600 dark:hover:text-indigo-400">Projects</a>
+                    <a href="index.html#education" class="hover:text-indigo-600 dark:hover:text-indigo-400">Education</a>
+                    <a href="CV - Dirga Halim Susilo.pdf" target="_blank"
+                        class="px-4 py-2 bg-indigo-600 text-white text-sm font-semibold rounded-lg shadow-sm hover:bg-indigo-700 transition-colors">
+                        Download CV
+                    </a>
+
+                    <button id="theme-toggle"
+                        class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 w-9 h-9 flex items-center justify-center">
+                        <span id="theme-icon-light" class="hidden"><i class="fa-solid fa-sun"></i></span>
+                        <span id="theme-icon-dark"><i class="fa-solid fa-moon"></i></span>
+                    </button>
+                </div>
+
+                <div class="md:hidden flex items-center gap-2">
+                    <button id="theme-toggle-mobile"
+                        class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 w-9 h-9 flex items-center justify-center">
+                        <span id="theme-icon-light-mobile" class="hidden"><i class="fa-solid fa-sun"></i></span>
+                        <span id="theme-icon-dark-mobile"><i class="fa-solid fa-moon"></i></span>
+                    </button>
+                    <button id="mobile-menu-toggle" class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700"
+                        aria-label="Buka menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu-panel"
+            class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
+            <a href="index.html#home" class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
+            <a href="index.html#experience"
+                class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">Experience</a>
+            <a href="index.html#projects" class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">Projects</a>
+            <a href="index.html#education" class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">Education</a>
+            <a href="[GANTI_LINK_CV.pdf]" target="_blank"
+                class="block px-3 py-2 rounded-md text-center font-medium bg-indigo-600 text-white hover:bg-indigo-700 transition-colors">
+                Download CV
+            </a>
+        </div>
+    </nav>
+
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+
+        <section id="all-my-projects" class="py-12">
+            <h1 class="text-4xl font-bold text-center mb-4">All My Projects</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+                Berikut adalah kumpulan lengkap proyek yang pernah saya kerjakan, baik proyek akademis, profesional,
+                maupun pribadi.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://via.placeholder.com/400x250/indigo/white?text=Project+1" alt="Preview Proyek 1"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">[Nama Proyek 1]</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Deskripsi singkat proyek...</p>
+                        <div class="flex gap-4">
+                            <a href="#" target="_blank"
+                                class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:underline"><i
+                                    class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#" target="_blank"
+                                class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:underline"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://via.placeholder.com/400x250/teal/white?text=Project+2" alt="Preview Proyek 2"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">[Nama Proyek 2]</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Deskripsi singkat proyek...</p>
+                        <div class="flex gap-4">
+                            <a href="#" target="_blank"
+                                class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:underline"><i
+                                    class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#" target="_blank"
+                                class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:underline"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://via.placeholder.com/400x250/purple/white?text=Project+3" alt="Preview Proyek 3"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">[Nama Proyek 3]</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Deskripsi singkat proyek...</p>
+                        <div class="flex gap-4">
+                            <a href="#" target="_blank"
+                                class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:underline"><i
+                                    class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://via.placeholder.com/400x250/red/white?text=Project+4" alt="Preview Proyek 4"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">[Nama Proyek 4]</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Deskripsi singkat proyek...</p>
+                        <div class="flex gap-4">
+                            <a href="#" target="_blank"
+                                class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:underline"><i
+                                    class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://via.placeholder.com/400x250/orange/white?text=Project+5" alt="Preview Proyek 5"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">[Nama Proyek 5]</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Deskripsi singkat proyek...</p>
+                        <div class="flex gap-4">
+                            <a href="#" target="_blank"
+                                class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:underline"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://via.placeholder.com/400x250/green/white?text=Project+6" alt="Preview Proyek 6"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">[Nama Proyek 6]</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Deskripsi singkat proyek...</p>
+                        <div class="flex gap-4">
+                            <a href="#" target="_blank"
+                                class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:underline"><i
+                                    class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="border-t border-gray-200 dark:border-gray-800 mt-20">
+        <div
+            class="max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-8">
+
+            <div>
+                <h3 class="text-2xl font-bold">Tertarik bekerja sama?</h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 mb-4">Hubungi saya atau download CV saya untuk info
+                    lebih lanjut.</p>
+                <a href="CV - Dirga Halim Susilo.pdf" target="_blank"
+                    class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition-colors">
+                    <i class="fa-solid fa-download"></i>
+                    Download My CV
+                </a>
+            </div>
+
+            <div class="text-gray-500 dark:text-gray-400">
+                <p>&copy; <span id="current-year"></span> Dirga Halim Susilo. All rights reserved.</p>
+                <p class="text-sm">Dibuat dengan ❤️ menggunakan TailwindCSS.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
