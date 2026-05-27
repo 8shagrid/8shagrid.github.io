@@ -1,48 +1,87 @@
 # Dirga Halim Susilo -- Portfolio
 
-[![Deploy to GitHub Pages](https://github.com/8shagrid/8shagrid.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/8shagrid/8shagrid.github.io/actions/workflows/deploy.yml)
+[![Deploy](https://github.com/8shagrid/8shagrid.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/8shagrid/8shagrid.github.io/actions/workflows/deploy.yml)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-Personal portfolio website -- **AI-Native Full-Stack Developer & Tech Entrepreneur**.
+Personal portfolio and professional landing page for **Dirga Halim Susilo** -- AI-Native Full-Stack Developer and Tech Entrepreneur based in Medan, Indonesia.
 
-Samurai-themed minimalist design. Built with Next.js 16, TypeScript, Tailwind CSS 4, and Framer Motion.
+## Overview
 
-## Live
+This portfolio showcases four live digital products, six technical projects spanning AI/ML and full-stack engineering, professional certifications, and career experience. The design follows a minimalist Samurai aesthetic with a dark color palette and sharp typography.
 
-**[8shagrid.github.io](https://8shagrid.github.io/)**
+**Live:** [8shagrid.github.io](https://8shagrid.github.io/)
 
-## Tech Stack
+## Features
 
-- **Framework:** Next.js 16 (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS 4
-- **Animations:** Framer Motion
-- **Icons:** Lucide React
-- **Fonts:** Playfair Display, Noto Serif JP, DM Sans
-- **Deploy:** GitHub Pages (GitHub Actions)
+- Single-page application with smooth scroll navigation
+- Responsive across mobile, tablet, and desktop viewports
+- Scroll-triggered animations via Framer Motion
+- Downloadable CV PDF
+- Static export optimized for GitHub Pages
 
-## Run Locally
+## Technology
+
+| Category | Stack |
+|---|---|
+| Framework | Next.js 16 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS 4 |
+| Animation | Framer Motion |
+| Icons | Lucide React |
+| Typography | Playfair Display, Noto Serif JP, DM Sans |
+| Hosting | GitHub Pages (GitHub Actions CI/CD) |
+
+## Project Structure
+
+```
+src/
+  app/            # Next.js App Router pages and layout
+  components/     # Reusable UI components (11 components)
+  lib/            # Shared utilities and content data
+public/           # Static assets, CV PDF, screenshots
+.github/          # GitHub Actions deployment workflow
+```
+
+## Development
+
+### Prerequisites
+
+- Node.js 20 or later
+- npm
+
+### Setup
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
+The development server starts at `http://localhost:3000`.
 
-## Build
+### Build
 
 ```bash
 npm run build
 ```
 
-Static export goes to `out/` directory.
+Outputs static files to the `out/` directory.
 
-## Edit Content
+### Content Management
 
-All portfolio content is in [`src/lib/data.ts`](src/lib/data.ts) -- edit that file to update your info.
+All portfolio content is centralized in `src/lib/data.ts`. Edit this single file to update:
+- Personal information and taglines
+- Product descriptions and tech stacks
+- Project listings
+- Skills, experience, education, and certifications
+
+## Deployment
+
+Deployment is automated via GitHub Actions. Every push to `main` triggers a build and deploys to GitHub Pages. The workflow configuration is at `.github/workflows/deploy.yml`.
 
 ## License
 
-MIT (c) Dirga Halim Susilo
+MIT (c) 2026 Dirga Halim Susilo
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
