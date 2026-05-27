@@ -4,7 +4,7 @@
 
 Personal portfolio website — **AI-Native Full-Stack Developer & Tech Entrepreneur**.
 
-> ⚔️ Samurai-themed minimalist design. Built with Next.js 16, TypeScript, Tailwind CSS 4, and Framer Motion.
+Built with Next.js 16, TypeScript, Tailwind CSS 4, and Framer Motion.
 
 ## 🚀 Live
 
