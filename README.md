@@ -31,7 +31,7 @@ This portfolio showcases four live digital products, six technical projects span
 | Animation | Framer Motion |
 | Icons | Lucide React |
 | Typography | Playfair Display, Noto Serif JP, DM Sans |
-| Hosting | GitHub Pages (GitHub Actions CI/CD) |
+| Hosting | Vercel (primary), GitHub Pages (mirror) |
 
 ## Project Structure
 
@@ -78,7 +78,24 @@ All portfolio content is centralized in `src/lib/data.ts`. Edit this single file
 
 ## Deployment
 
-Deployment is automated via GitHub Actions. Every push to `main` triggers a build and deploys to GitHub Pages. The workflow configuration is at `.github/workflows/deploy.yml`.
+### Vercel (Recommended)
+
+This project is optimized for [Vercel](https://vercel.com), the native hosting platform for Next.js.
+
+1. Push to GitHub
+2. Import the repository in Vercel: `https://vercel.com/import`
+3. Vercel auto-detects Next.js and configures the build
+4. Deploy
+
+The `vercel.json` at the project root contains the framework preset.
+
+### GitHub Pages (Mirror)
+
+A static export workflow is maintained in `.github/workflows/deploy.yml` as a fallback. To enable:
+
+1. Restore `output: "export"` in `next.config.ts`
+2. Configure GitHub Pages source to "GitHub Actions"
+3. Push to `main`
 
 ## License
 

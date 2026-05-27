@@ -52,7 +52,7 @@ export const products: Product[] = [
   {
     title: "PejuangKampus.co.id",
     role: "Solo Programmer",
-    badge: "Solo Built",
+    badge: "🏆 Solo Built",
     description:
       "Platform bimbel online persiapan PTN & sekolah kedinasan. Sistem ujian online, manajemen soal, leaderboard, dan pembelajaran — dikerjakan sendiri dari nol hingga produksi.",
     tech: [
@@ -72,7 +72,7 @@ export const products: Product[] = [
   {
     title: "Seraya ERP",
     role: "Solo Developer",
-    badge: "Solo Built",
+    badge: "🏆 Solo Built",
     description:
       "Enterprise-grade ERP system untuk operasional bisnis Seraya. 20 modul: Dashboard, Produksi, Penjualan, Cashflow, Budgeting, Bagi Hasil, Komisi Reseller, Audit Logs, dan lainnya. Role-based access, real-time analytics, automated reporting.",
     tech: [
