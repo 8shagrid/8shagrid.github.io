@@ -1,33 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dirga Halim Susilo — Portfolio
 
-## Getting Started
+[![Deploy to GitHub Pages](https://github.com/8shagrid/8shagrid.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/8shagrid/8shagrid.github.io/actions/workflows/deploy.yml)
 
-First, run the development server:
+Personal portfolio website — **AI-Native Full-Stack Developer & Tech Entrepreneur**.
+
+> ⚔️ Samurai-themed minimalist design. Built with Next.js 16, TypeScript, Tailwind CSS 4, and Framer Motion.
+
+## 🚀 Live
+
+**[8shagrid.github.io](https://8shagrid.github.io/)**
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS 4
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Fonts:** Playfair Display, Noto Serif JP, DM Sans
+- **Deploy:** GitHub Pages (GitHub Actions)
+
+## 🏃 Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+Static export goes to `out/` directory.
 
-To learn more about Next.js, take a look at the following resources:
+## 📝 Edit Content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+All portfolio content is in [`src/lib/data.ts`](src/lib/data.ts) — edit that file to update your info.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 License
+
+MIT © Dirga Halim Susilo
 
 ## Deploy on Vercel
 
