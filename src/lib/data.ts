@@ -85,8 +85,8 @@ export const products: Product[] = [
       "TanStack Table",
       "Playwright",
     ],
-    link: "#",
-    linkLabel: "Demo on Request",
+    link: "#contact",
+    linkLabel: "Request Demo",
     image: "/screenshots/seraya-erp.png",
   },
   {
@@ -146,7 +146,7 @@ export const projects: Project[] = [
     description:
       "ML-based system untuk mendeteksi website phishing menggunakan ekstraksi fitur URL. Full-stack Django dengan model ML terintegrasi. Team: Barokah.",
     tech: ["Python", "Django", "Scikit-learn", "Feature Extraction", "SQLite"],
-    link: "#",
+    link: "https://github.com/8shagrid",
     linkLabel: "GitHub",
   },
   {
@@ -318,16 +318,6 @@ export const certifications = [
     title: "ASEAN Data Science Explorers",
     issuer: "ASEAN Foundation",
     date: "Jan 2022",
-  },
-];
-
-// --- Blog ---
-export const blogPosts = [
-  {
-    title: "Coming Soon",
-    excerpt: "Articles about AI, software engineering, and building digital products.",
-    date: "",
-    link: "#",
   },
 ];
 

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import SectionHeader from "./SectionHeader";
@@ -26,7 +27,19 @@ export default function FeaturedProducts() {
               className="group relative bg-tetsu border border-susu/30 rounded-sm overflow-hidden hover:border-beni/30 transition-all duration-300"
             >
               {/* Red accent top line on hover */}
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-beni scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              <div className="absolute top-0 left-0 right-0 z-10 h-[2px] bg-beni scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+
+              {/* Product Screenshot */}
+              <div className="relative aspect-[16/10] overflow-hidden bg-sumi">
+                <Image
+                  src={product.image}
+                  alt={product.title}
+                  fill
+                  className="object-cover object-top transition-all duration-500 group-hover:scale-105 group-hover:opacity-80"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-tetsu via-tetsu/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
 
               <div className="p-6">
                 {/* Header */}

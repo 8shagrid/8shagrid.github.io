@@ -6,15 +6,15 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Certifications from "@/components/Certifications";
-import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <FeaturedProducts />
         <TechProjects />
@@ -22,10 +22,10 @@ export default function Home() {
         <Experience />
         <Education />
         <Certifications />
-        <Blog />
         <Contact />
       </main>
       <Footer />
+      <BackToTop />
     </>
   );
 }

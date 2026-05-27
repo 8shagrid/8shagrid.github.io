@@ -2,8 +2,14 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, ArrowRight, Clock } from "lucide-react";
+import { SiGithub } from "react-icons/si";
 import SectionHeader from "./SectionHeader";
 import { projects } from "@/lib/data";
+
+function getLinkIcon(url: string) {
+  if (url.includes("github.com")) return SiGithub;
+  return ExternalLink;
+}
 
 export default function TechProjects() {
   return (
@@ -57,17 +63,20 @@ export default function TechProjects() {
                   </div>
                 </div>
 
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="shrink-0 inline-flex items-center gap-1.5 text-xs text-beni hover:text-beni-light transition-colors"
-                  >
-                    {project.linkLabel}
-                    <ExternalLink size={11} />
-                  </a>
-                )}
+                {project.link && (() => {
+                    const LinkIcon = getLinkIcon(project.link);
+                    return (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="shrink-0 inline-flex items-center gap-1.5 text-xs text-beni hover:text-beni-light transition-colors"
+                      >
+                        {project.linkLabel}
+                        <LinkIcon size={11} />
+                      </a>
+                    );
+                  })()}
               </div>
             </motion.div>
           ))}

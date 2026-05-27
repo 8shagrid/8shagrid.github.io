@@ -1,6 +1,7 @@
 "use client";
 
-import { Mail } from "lucide-react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 export default function Footer() {
   return (
@@ -25,26 +26,26 @@ export default function Footer() {
             href="https://github.com/8shagrid"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-hai/40 hover:text-shiro transition-colors text-xs font-medium"
+            className="text-hai/40 hover:text-shiro transition-colors"
             aria-label="GitHub"
           >
-            GitHub
+            <FaGithub size={18} />
           </a>
           <a
             href="https://linkedin.com/in/dirgahalimsusilo"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-hai/40 hover:text-shiro transition-colors text-xs font-medium"
+            className="text-hai/40 hover:text-[#0a66c2] transition-colors"
             aria-label="LinkedIn"
           >
-            LinkedIn
+            <FaLinkedinIn size={18} />
           </a>
           <a
             href="mailto:halimdirga8@gmail.com"
-            className="text-hai/40 hover:text-shiro transition-colors"
+            className="text-hai/40 hover:text-beni transition-colors"
             aria-label="Email"
           >
-            <Mail size={16} />
+            <HiOutlineMail size={18} />
           </a>
         </div>
       </div>
