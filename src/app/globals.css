@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ============================================
+   侍 (Samurai) Theme — Portfolio Dirga Halim Susilo
+   ============================================ */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-sumi: #0d0d12;
+  --color-tetsu: #1a1a22;
+  --color-susu: #252530;
+  --color-beni: #c53030;
+  --color-beni-light: #d44a4a;
+  --color-kin: #c9a54b;
+  --color-kin-light: #d4b36a;
+  --color-shiro: #f0ece4;
+  --color-hai: #8c8c7e;
+  --color-take: #4a6741;
+  --font-heading: "Playfair Display", "Noto Serif JP", serif;
+  --font-body: "DM Sans", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+  --font-jp: "Noto Serif JP", serif;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-sumi);
+  color: var(--color-shiro);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-beni);
+  color: var(--color-shiro);
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-sumi); }
+::-webkit-scrollbar-thumb { background: var(--color-susu); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-beni); }
+
+:focus-visible {
+  outline: 2px solid var(--color-beni);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
 }
