@@ -8,7 +8,7 @@ import { GraduationCap, BookOpen } from "lucide-react";
 export default function Education() {
   return (
     <section className="py-24 md:py-32 px-6 border-t border-susu/10">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <SectionHeader
           label="Education"
           title="Academic Background"

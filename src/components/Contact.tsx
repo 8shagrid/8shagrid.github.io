@@ -72,7 +72,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-24 md:py-32 px-6 border-t border-susu/10">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <SectionHeader
           label="Contact"
           title="Let's Connect"
