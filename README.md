@@ -1,16 +1,16 @@
-# Dirga Halim Susilo — Portfolio
+# Dirga Halim Susilo -- Portfolio
 
 [![Deploy to GitHub Pages](https://github.com/8shagrid/8shagrid.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/8shagrid/8shagrid.github.io/actions/workflows/deploy.yml)
 
-Personal portfolio website — **AI-Native Full-Stack Developer & Tech Entrepreneur**.
+Personal portfolio website -- **AI-Native Full-Stack Developer & Tech Entrepreneur**.
 
-Built with Next.js 16, TypeScript, Tailwind CSS 4, and Framer Motion.
+Samurai-themed minimalist design. Built with Next.js 16, TypeScript, Tailwind CSS 4, and Framer Motion.
 
-## 🚀 Live
+## Live
 
 **[8shagrid.github.io](https://8shagrid.github.io/)**
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Framework:** Next.js 16 (App Router)
 - **Language:** TypeScript
@@ -20,7 +20,7 @@ Built with Next.js 16, TypeScript, Tailwind CSS 4, and Framer Motion.
 - **Fonts:** Playfair Display, Noto Serif JP, DM Sans
 - **Deploy:** GitHub Pages (GitHub Actions)
 
-## 🏃 Run Locally
+## Run Locally
 
 ```bash
 npm install
@@ -29,7 +29,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
-## 📦 Build
+## Build
 
 ```bash
 npm run build
@@ -37,16 +37,12 @@ npm run build
 
 Static export goes to `out/` directory.
 
-## 📝 Edit Content
+## Edit Content
 
-All portfolio content is in [`src/lib/data.ts`](src/lib/data.ts) — edit that file to update your info.
+All portfolio content is in [`src/lib/data.ts`](src/lib/data.ts) -- edit that file to update your info.
 
-## 📄 License
+## License
 
-MIT © Dirga Halim Susilo
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT (c) Dirga Halim Susilo
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
