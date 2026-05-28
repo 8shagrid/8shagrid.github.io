@@ -10,7 +10,7 @@ import { viewportOnce } from "@/lib/animations";
 export default function Education() {
   return (
     <Section>
-      <SectionHeader label="Education" title="Academic Background" />
+      <SectionHeader label="Education" title="Data Science Foundation" />
 
       <motion.div
         initial={{ opacity: 0, y: 16 }}

@@ -77,8 +77,8 @@ export default function Contact() {
     <Section id="contact">
       <SectionHeader
         label="Contact"
-        title="Let's Connect"
-        description="Open for freelance projects, collaboration, and full-time opportunities."
+        title="Build Something Useful"
+        description="Available for freelance projects, AI implementation, dashboard development, ERP systems, and full-time software engineering roles."
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

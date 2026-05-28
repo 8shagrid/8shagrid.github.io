@@ -38,8 +38,8 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-xs text-hai/40">
-          © {new Date().getFullYear()} Dirga Halim Susilo. Built with Next.js &
-          Tailwind.
+          © {new Date().getFullYear()} Dirga Halim Susilo. Full-stack, AI, and
+          data portfolio.
         </p>
 
         {/* Social */}

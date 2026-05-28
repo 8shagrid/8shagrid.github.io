@@ -31,9 +31,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dirgahalimsusilo.site"),
-  title: "Dirga Halim Susilo — AI-Native Full-Stack Developer & Tech Entrepreneur",
+  title:
+    "Dirga Halim Susilo | Full-Stack Developer, AI Engineer & Data Specialist",
   description:
-    "S1 Data Science (GPA 3.77). Freelance developer & data specialist. Built 4 digital products including enterprise ERP. Based in Medan, Indonesia.",
+    "Portfolio Dirga Halim Susilo, Full-Stack Developer, AI Engineer, and Data Specialist based in Medan, Indonesia. Building web apps, ERP systems, dashboards, and AI solutions with Next.js, TypeScript, Python, and Supabase.",
   keywords: [
     "Dirga Halim Susilo",
     "Software Engineer",
@@ -43,12 +44,15 @@ export const metadata: Metadata = {
     "Next.js",
     "TypeScript",
     "Portfolio",
+    "ERP Developer",
+    "Data Analyst",
+    "Medan Developer",
   ],
   authors: [{ name: "Dirga Halim Susilo" }],
   openGraph: {
-    title: "Dirga Halim Susilo — Full-Stack Developer & Tech Entrepreneur",
+    title: "Dirga Halim Susilo | Full-Stack Developer & AI Engineer",
     description:
-      "Building AI-powered products and digital businesses. S1 Data Science (GPA 3.77).",
+      "Explore web applications, ERP systems, data dashboards, and AI projects built by Dirga Halim Susilo.",
     type: "website",
     locale: "en_ID",
     siteName: "Dirga Halim Susilo",
@@ -57,15 +61,15 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Dirga Halim Susilo — Portfolio",
+        alt: "Dirga Halim Susilo Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dirga Halim Susilo — Full-Stack Developer & Tech Entrepreneur",
+    title: "Dirga Halim Susilo | Full-Stack Developer & AI Engineer",
     description:
-      "Building AI-powered products and digital businesses. S1 Data Science (GPA 3.77).",
+      "Portfolio of web applications, ERP systems, data dashboards, and AI projects.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -82,7 +86,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Dirga Halim Susilo",
-  jobTitle: "AI-Native Full-Stack Developer & Tech Entrepreneur",
+  jobTitle: "Full-Stack Developer, AI Engineer & Data Specialist",
   url: "https://dirgahalimsusilo.site",
   sameAs: [
     "https://github.com/8shagrid",

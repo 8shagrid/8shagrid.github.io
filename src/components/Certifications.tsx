@@ -12,8 +12,8 @@ export default function Certifications() {
     <Section>
       <SectionHeader
         label="Certifications"
-        title="Professional Certifications"
-        description="Continuous learning validated by industry leaders."
+        title="Verified Learning Credentials"
+        description="Certifications in SQL, data analytics, machine learning, and deep learning from recognized learning platforms."
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">

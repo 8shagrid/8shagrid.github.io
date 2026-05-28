@@ -18,8 +18,8 @@ export default function TechProjects() {
     <Section id="projects">
       <SectionHeader
         label="Tech Projects"
-        title="AI & Engineering Projects"
-        description="From machine learning research to full-stack applications."
+        title="AI, Data & Engineering Projects"
+        description="Applied machine learning, analytics dashboards, and full-stack experiments focused on practical business and research outcomes."
       />
 
       <div className="space-y-3">

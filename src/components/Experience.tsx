@@ -11,8 +11,8 @@ export default function Experience() {
     <Section id="experience">
       <SectionHeader
         label="Experience"
-        title="Where I've Worked"
-        description="Freelancing, internships, and academic contributions."
+        title="Professional Experience"
+        description="Hands-on experience across freelance software development, data science, HR analytics, and academic research."
       />
 
       <div className="relative">

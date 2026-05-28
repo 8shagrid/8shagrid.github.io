@@ -198,7 +198,7 @@ export default function Hero() {
             >
               <Circle size={8} className="text-take fill-take" />
               <span className="text-[11px] text-take/80 font-medium tracking-wide">
-                Available for opportunities
+                Open for freelance, product, and AI projects
               </span>
             </motion.div>
 
@@ -222,10 +222,10 @@ export default function Hero() {
               className="mb-5"
             >
               <div className="text-base sm:text-lg md:text-xl text-hai font-medium leading-relaxed text-center lg:text-left">
-                <span className="text-beni">✦</span> AI-Native Full-Stack
-                Developer
+                <span className="text-beni">✦</span> Full-Stack Developer & AI
+                Engineer
                 <span className="text-hai/25 mx-2">|</span>
-                Tech Entrepreneur
+                Data-Driven Product Builder
               </div>
             </motion.div>
 
@@ -261,7 +261,7 @@ export default function Hero() {
                 href="#products"
                 className="group inline-flex items-center justify-center gap-2 px-6 py-3 bg-beni text-shiro font-medium text-sm rounded-sm hover:bg-beni-light transition-all duration-200 shadow-lg shadow-beni/20"
               >
-                View My Work
+                Explore Projects
                 <ChevronDown
                   size={16}
                   className="group-hover:translate-y-0.5 transition-transform"
@@ -271,7 +271,7 @@ export default function Hero() {
                 href="#contact"
                 className="group inline-flex items-center justify-center gap-2 px-6 py-3 border border-susu/40 text-shiro font-medium text-sm rounded-sm hover:border-beni/40 hover:bg-beni/5 transition-all duration-200"
               >
-                Get in Touch
+                Start a Project
                 <span className="group-hover:translate-x-0.5 transition-transform">
                   →
                 </span>

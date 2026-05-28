@@ -11,8 +11,8 @@ export default function Skills() {
     <Section id="skills">
       <SectionHeader
         label="Tech Stack"
-        title="Skills & Technologies"
-        description="Bridging AI/Data Science with modern Software Engineering."
+        title="Technical Capabilities"
+        description="A practical stack for building scalable web applications, data products, automation, and AI-powered workflows."
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

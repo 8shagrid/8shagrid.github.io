@@ -13,8 +13,8 @@ export default function FeaturedProducts() {
     <Section id="products" bordered={false}>
       <SectionHeader
         label="Featured Products"
-        title="Products I've Built"
-        description="Digital products built from zero to production — serving real users and generating revenue."
+        title="Production-Ready Digital Products"
+        description="A selection of web platforms, ERP systems, and digital businesses I built from idea to launch."
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

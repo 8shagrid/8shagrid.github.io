@@ -6,9 +6,9 @@
 // --- Hero ---
 export const heroData = {
   name: "Dirga Halim Susilo",
-  title: "AI-Native Full-Stack Developer\n& Tech Entrepreneur",
+  title: "Full-Stack Developer, AI Engineer\n& Data Specialist",
   tagline:
-    "Building AI-powered products, running digital businesses, and helping clients turn data into decisions — all at once.",
+    "I build production-ready web applications, ERP systems, data dashboards, and AI solutions that help businesses move faster and make better decisions.",
   stats: [
     { label: "Live Products", value: "4" },
     { label: "GPA", value: "3.77" },
@@ -35,7 +35,7 @@ export const products: Product[] = [
     title: "SiapTempur.id",
     role: "Owner & Full-Stack Developer",
     description:
-      "Platform tryout SKD CPNS dengan sistem penilaian standar CAT BKN, timer real-time 100 menit, dan payment gateway Midtrans. Sistem tryout ketengan tanpa langganan — melayani ribuan peserta.",
+      "Platform tryout SKD CPNS berbasis web dengan penilaian standar CAT BKN, timer real-time, pembayaran Midtrans, dan pengalaman latihan yang ringan tanpa sistem langganan. Dibangun untuk membantu peserta berlatih lebih terarah sebelum ujian.",
     tech: [
       "Next.js 16",
       "TypeScript",
@@ -53,7 +53,7 @@ export const products: Product[] = [
     title: "PejuangKampus.co.id",
     role: "Programmer",
     description:
-      "Platform bimbel online persiapan PTN & sekolah kedinasan. Sistem ujian online, manajemen soal, leaderboard, dan pembelajaran — dikerjakan sendiri dari nol hingga produksi.",
+      "Platform bimbingan belajar online untuk persiapan PTN dan sekolah kedinasan. Mencakup ujian online, manajemen soal, leaderboard, dan sistem pembelajaran digital yang siap digunakan siswa dan tim operasional.",
     tech: [
       "Next.js 16",
       "TypeScript",
@@ -73,7 +73,7 @@ export const products: Product[] = [
     role: "Solo Developer",
     badge: "🏆 Solo Built",
     description:
-      "Enterprise-grade ERP system untuk operasional bisnis Seraya. 20 modul: Dashboard, Produksi, Penjualan, Cashflow, Budgeting, Bagi Hasil, Komisi Reseller, Audit Logs, dan lainnya. Role-based access, real-time analytics, automated reporting.",
+      "Sistem ERP custom untuk operasional bisnis Seraya, dibangun solo dari nol hingga production. Mengelola dashboard, produksi, penjualan, cashflow, budgeting, bagi hasil, komisi reseller, audit logs, role-based access, analytics, dan reporting otomatis.",
     tech: [
       "Next.js 16",
       "TypeScript",
@@ -92,7 +92,7 @@ export const products: Product[] = [
     title: "Seraya.my.id",
     role: "Owner & Developer",
     description:
-      "Studio undangan digital & fisik yang elegan. 150+ tema untuk pernikahan, ulang tahun, aqiqah, khitanan. Rating 4.9 ⭐ dari klien.",
+      "Website studio undangan digital dan fisik untuk pernikahan, ulang tahun, aqiqah, dan khitanan. Menawarkan 150+ tema siap pakai, proses pemesanan yang jelas, dan pengalaman klien dengan rating 4.9.",
     tech: ["HTML5", "CSS3", "JavaScript", "Lucide Icons", "Vercel"],
     link: "https://seraya.my.id",
     linkLabel: "Visit Website",
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     title: "CNN Sign Language Translator",
     type: "AI / Machine Learning",
     description:
-      "CNN-based web app untuk menerjemahkan bahasa isyarat alfabet (MNIST dataset). Akurasi 100% pada mayoritas huruf. Riset skripsi dengan proposal pengembangan motion detection untuk aplikasi real-time.",
+      "Aplikasi machine learning berbasis CNN untuk mengenali alfabet bahasa isyarat dari dataset MNIST. Proyek riset ini membuktikan akurasi tinggi pada mayoritas huruf dan menjadi fondasi pengembangan deteksi gerakan real-time.",
     tech: ["Python", "TensorFlow", "CNN", "FastAPI", "React"],
     link: "https://github.com/8shagrid",
     linkLabel: "GitHub",
@@ -125,7 +125,7 @@ export const projects: Project[] = [
     title: "HR Analytics Dashboard",
     type: "Data Visualization",
     description:
-      "Dashboard interaktif monitoring metrik workforce — attrition rate, demografi, pendidikan, gender, kepuasan kerja. Mengurangi HR report generation time 40%.",
+      "Dashboard analitik HR untuk memantau attrition rate, demografi, pendidikan, gender, dan kepuasan kerja. Dirancang agar tim HR lebih cepat membaca tren workforce dan mengurangi waktu pembuatan laporan hingga 40%.",
     tech: ["Excel", "Pivot Tables", "Data Analysis", "Interactive Dashboard"],
     link: "https://github.com/8shagrid/hr-analytics-dashboard-excel",
     linkLabel: "GitHub",
@@ -134,8 +134,13 @@ export const projects: Project[] = [
     title: "Road Accident Dashboard",
     type: "Data Visualization",
     description:
-      "Dasbor interaktif berbasis Excel yang memvisualisasikan statistik kecelakaan jalan berdasarkan bulan, jenis jalan, kondisi cahaya, kondisi permukaan, dan lokasi.",
-    tech: ["Excel", "Data Visualization", "Interactive Dashboard", "Statistics"],
+      "Dashboard visualisasi data kecelakaan jalan berbasis Excel yang merangkum tren bulanan, jenis jalan, kondisi cahaya, permukaan jalan, dan lokasi kejadian untuk membantu analisis risiko secara cepat.",
+    tech: [
+      "Excel",
+      "Data Visualization",
+      "Interactive Dashboard",
+      "Statistics",
+    ],
     link: "https://github.com/8shagrid/road-accident-dashboard-excel",
     linkLabel: "GitHub",
   },
@@ -143,7 +148,7 @@ export const projects: Project[] = [
     title: "Web Phishing Detection",
     type: "AI / Cybersecurity",
     description:
-      "ML-based system untuk mendeteksi website phishing menggunakan ekstraksi fitur URL. Full-stack Django dengan model ML terintegrasi. Team: Barokah.",
+      "Sistem deteksi website phishing berbasis machine learning dengan ekstraksi fitur URL dan integrasi model ke aplikasi Django. Dibangun untuk membantu identifikasi ancaman lebih cepat pada level aplikasi web.",
     tech: ["Python", "Django", "Scikit-learn", "Feature Extraction", "SQLite"],
     link: "https://github.com/8shagrid",
     linkLabel: "GitHub",
@@ -152,7 +157,7 @@ export const projects: Project[] = [
     title: "AI Chat / RAG App",
     type: "AI + Full-Stack",
     description:
-      "Retrieval-Augmented Generation app: upload dokumen, tanya jawab dengan AI. Integrasi LLM + vector database untuk konteks-aware responses.",
+      "Konsep aplikasi RAG untuk upload dokumen dan tanya jawab berbasis AI. Menggabungkan LLM, vector database, dan backend API agar jawaban lebih relevan terhadap konteks dokumen pengguna.",
     tech: ["LangChain", "OpenAI", "Pinecone", "Next.js", "FastAPI"],
     comingSoon: true,
   },
@@ -160,7 +165,7 @@ export const projects: Project[] = [
     title: "MLOps Pipeline Demo",
     type: "MLOps / DevOps",
     description:
-      "End-to-end ML pipeline: data preprocessing → model training → evaluation → deployment → monitoring dengan CI/CD.",
+      "Demo pipeline MLOps end-to-end untuk preprocessing data, training model, evaluasi, deployment, monitoring, dan CI/CD. Dirancang sebagai fondasi workflow machine learning yang lebih repeatable.",
     tech: ["Docker", "GitHub Actions", "FastAPI", "Scikit-learn"],
     comingSoon: true,
   },
@@ -226,10 +231,10 @@ export const experiences: Experience[] = [
     company: "Remote / Various Clients",
     location: "Indonesia",
     details: [
-      "Data Mining & Analysis: end-to-end data cycles — collection, cleaning, transformation, statistical analysis.",
-      "Web Development: building landing pages, web apps, and internal systems with Next.js, React, Supabase.",
-      "Data Visualization: interactive dashboards (Power BI, Tableau, Looker Studio, Recharts).",
-      "Paralel dengan menjalankan 4 bisnis digital sendiri.",
+      "Mengelola siklus data end-to-end: collection, cleaning, transformation, analysis, dan insight generation.",
+      "Membangun landing page, web application, dan internal tools menggunakan Next.js, React, Supabase, dan TypeScript.",
+      "Mendesain dashboard interaktif untuk business intelligence menggunakan Power BI, Tableau, Looker Studio, dan Recharts.",
+      "Mengembangkan dan mengoperasikan 4 produk digital sendiri sebagai founder sekaligus engineer.",
     ],
   },
   {
@@ -238,9 +243,9 @@ export const experiences: Experience[] = [
     company: "PT eBdesk Teknologi",
     location: "Tangerang Selatan",
     details: [
-      "Assisted data science team with election data research — data cleaning and feature engineering.",
-      "Supported dashboard visualization and machine learning lifecycle under senior mentorship.",
-      "Participated in model parameter tuning experiments.",
+      "Mendukung riset data pemilu melalui data cleaning, feature engineering, dan eksplorasi pola data.",
+      "Membantu proses visualisasi dashboard dan workflow machine learning bersama tim data science.",
+      "Berpartisipasi dalam eksperimen tuning parameter untuk meningkatkan performa model.",
     ],
   },
   {
@@ -249,9 +254,20 @@ export const experiences: Experience[] = [
     company: "Universitas Teknologi Yogyakarta",
     location: "Yogyakarta",
     details: [
-      "Lectured classes, seminars, and training. Provided university guidance for students.",
-      "Examined student projects, practicum, and laboratory research activities.",
-      "Head of Research Chapter Yogyakarta — Data Science Indonesia (Aug 2022 — Jan 2023).",
+      "Mendampingi kelas, seminar, dan pelatihan dengan fokus pada pemahaman praktis mahasiswa.",
+      "Menilai proyek mahasiswa, praktikum, serta aktivitas riset laboratorium.",
+      "Memberikan bimbingan akademik dan membantu mahasiswa memahami materi secara praktis.",
+    ],
+  },
+  {
+    period: "Aug 2022 — Jan 2023",
+    role: "Head of Research Chapter Yogyakarta",
+    company: "Data Science Indonesia",
+    location: "Yogyakarta",
+    details: [
+      "Mengelola arah riset dan program pembelajaran data science untuk chapter Yogyakarta.",
+      "Mengoordinasikan seminar, pelatihan, dan diskusi riset bersama komunitas data.",
+      "Mendorong kolaborasi antaranggota untuk membangun pemahaman praktis tentang data science.",
     ],
   },
   {
@@ -260,9 +276,9 @@ export const experiences: Experience[] = [
     company: "Santara",
     location: "Yogyakarta",
     details: [
-      "Daily data entry and validation of employee data in HRIS.",
-      "Compiled Excel reports with pivot tables for strategic HR analysis.",
-      "Participated in UX analysis of internal applications.",
+      "Melakukan input dan validasi data karyawan harian di sistem HRIS.",
+      "Menyusun laporan Excel dan pivot table untuk mendukung analisis strategis HR.",
+      "Terlibat dalam analisis UX aplikasi internal untuk meningkatkan alur kerja pengguna.",
     ],
   },
 ];
@@ -274,10 +290,10 @@ export const education = {
   period: "Sep 2020 — Aug 2024",
   gpa: "3.77 / 4.00",
   thesis:
-    "Riset Translator Bahasa Isyarat Berbasis Web Menggunakan CNN — mengembangkan model CNN untuk mengenali alfabet bahasa isyarat (dataset MNIST), mencapai akurasi 100% pada mayoritas huruf dan mengidentifikasi tantangan untuk aplikasi real-time.",
+    "Riset translator bahasa isyarat berbasis web menggunakan CNN untuk mengenali alfabet bahasa isyarat dari dataset MNIST, mencapai akurasi tinggi pada mayoritas huruf, dan mengidentifikasi peluang pengembangan aplikasi real-time.",
   achievements: [
-    "Asisten Dosen (Sep 2022 — Jan 2023): Memimpin sesi praktikum, membantu penyampaian materi seminar, memeriksa dan menilai proyek mahasiswa (UTS & UAS), memberikan bimbingan akademik.",
-    "Head of Research Chapter Yogyakarta — Data Science Indonesia (Aug 2022 — Jan 2023): Mengarahkan pelatihan dan riset data science melalui program seminar, mengelola chapter Yogyakarta.",
+    "Asisten Dosen (Sep 2022 — Jan 2023): Memimpin sesi praktikum, membantu seminar, menilai proyek UTS/UAS, dan memberikan bimbingan akademik.",
+    "Head of Research Chapter Yogyakarta — Data Science Indonesia (Aug 2022 — Jan 2023): Mengelola program seminar, pelatihan, dan riset data science untuk chapter Yogyakarta.",
   ],
 };
 
