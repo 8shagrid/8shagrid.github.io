@@ -37,6 +37,8 @@ export default function FeaturedProducts() {
                 alt={product.title}
                 fill
                 className="object-cover object-top transition-all duration-500 group-hover:scale-105 group-hover:opacity-80"
+                priority={index === 0}
+                loading={index === 0 ? "eager" : "lazy"}
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-tetsu via-tetsu/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
