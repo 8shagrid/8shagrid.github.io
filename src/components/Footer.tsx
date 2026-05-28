@@ -1,7 +1,28 @@
-"use client";
-
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { contactData } from "@/lib/data";
+import { cn } from "@/lib/utils";
+
+const socialLinks = [
+  {
+    label: "GitHub",
+    href: `https://${contactData.github}`,
+    icon: FaGithub,
+    hoverClassName: "hover:text-shiro",
+  },
+  {
+    label: "LinkedIn",
+    href: `https://${contactData.linkedin}`,
+    icon: FaLinkedinIn,
+    hoverClassName: "hover:text-[#0a66c2]",
+  },
+  {
+    label: "Email",
+    href: `mailto:${contactData.email}`,
+    icon: HiOutlineMail,
+    hoverClassName: "hover:text-beni",
+  },
+];
 
 export default function Footer() {
   return (
@@ -17,36 +38,29 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-xs text-hai/40">
-          © {new Date().getFullYear()} Dirga Halim Susilo. Built with Next.js & Tailwind.
+          © {new Date().getFullYear()} Dirga Halim Susilo. Built with Next.js &
+          Tailwind.
         </p>
 
         {/* Social */}
         <div className="flex items-center gap-4">
-          <a
-            href="https://github.com/8shagrid"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-hai/40 hover:text-shiro transition-colors"
-            aria-label="GitHub"
-          >
-            <FaGithub size={18} />
-          </a>
-          <a
-            href="https://linkedin.com/in/dirgahalimsusilo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-hai/40 hover:text-[#0a66c2] transition-colors"
-            aria-label="LinkedIn"
-          >
-            <FaLinkedinIn size={18} />
-          </a>
-          <a
-            href="mailto:halimdirga8@gmail.com"
-            className="text-hai/40 hover:text-beni transition-colors"
-            aria-label="Email"
-          >
-            <HiOutlineMail size={18} />
-          </a>
+          {socialLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target={link.href.startsWith("http") ? "_blank" : undefined}
+              rel={
+                link.href.startsWith("http") ? "noopener noreferrer" : undefined
+              }
+              className={cn(
+                "text-hai/40 transition-colors",
+                link.hoverClassName,
+              )}
+              aria-label={link.label}
+            >
+              <link.icon size={18} />
+            </a>
+          ))}
         </div>
       </div>
     </footer>

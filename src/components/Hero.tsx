@@ -14,18 +14,90 @@ const stats = [
 // Decorative terminal window for the right column
 function CodeVisual() {
   const lines = [
-    { indent: 0, keyword: "const", text: " developer", kwColor: "text-[#bb9af7]", textColor: "text-shiro/60" },
-    { indent: 1, keyword: "", text: "name:", kwColor: "", textColor: "text-shiro/80" },
-    { indent: 2, keyword: "", text: '"Dirga Halim Susilo",', kwColor: "", textColor: "text-[#9ece6a]" },
-    { indent: 1, keyword: "", text: "stack:", kwColor: "", textColor: "text-shiro/80" },
-    { indent: 2, keyword: "", text: '["Next.js", "TypeScript",', kwColor: "", textColor: "text-[#9ece6a]" },
-    { indent: 2, keyword: "", text: ' "Python", "Supabase",', kwColor: "", textColor: "text-[#9ece6a]" },
-    { indent: 2, keyword: "", text: ' "TensorFlow", "Prisma"],', kwColor: "", textColor: "text-[#9ece6a]" },
-    { indent: 1, keyword: "", text: "role:", kwColor: "", textColor: "text-shiro/80" },
-    { indent: 2, keyword: "", text: '"Full-Stack & AI Engineer",', kwColor: "", textColor: "text-[#9ece6a]" },
-    { indent: 1, keyword: "", text: "status:", kwColor: "", textColor: "text-shiro/80" },
-    { indent: 2, keyword: "", text: '"available"', kwColor: "", textColor: "text-[#9ece6a]" },
-    { indent: 0, keyword: "};", text: "", kwColor: "text-[#bb9af7]", textColor: "" },
+    {
+      indent: 0,
+      keyword: "const",
+      text: " developer",
+      kwColor: "text-[#bb9af7]",
+      textColor: "text-shiro/60",
+    },
+    {
+      indent: 1,
+      keyword: "",
+      text: "name:",
+      kwColor: "",
+      textColor: "text-shiro/80",
+    },
+    {
+      indent: 2,
+      keyword: "",
+      text: '"Dirga Halim Susilo",',
+      kwColor: "",
+      textColor: "text-[#9ece6a]",
+    },
+    {
+      indent: 1,
+      keyword: "",
+      text: "stack:",
+      kwColor: "",
+      textColor: "text-shiro/80",
+    },
+    {
+      indent: 2,
+      keyword: "",
+      text: '["Next.js", "TypeScript",',
+      kwColor: "",
+      textColor: "text-[#9ece6a]",
+    },
+    {
+      indent: 2,
+      keyword: "",
+      text: ' "Python", "Supabase",',
+      kwColor: "",
+      textColor: "text-[#9ece6a]",
+    },
+    {
+      indent: 2,
+      keyword: "",
+      text: ' "TensorFlow", "Prisma"],',
+      kwColor: "",
+      textColor: "text-[#9ece6a]",
+    },
+    {
+      indent: 1,
+      keyword: "",
+      text: "role:",
+      kwColor: "",
+      textColor: "text-shiro/80",
+    },
+    {
+      indent: 2,
+      keyword: "",
+      text: '"Full-Stack & AI Engineer",',
+      kwColor: "",
+      textColor: "text-[#9ece6a]",
+    },
+    {
+      indent: 1,
+      keyword: "",
+      text: "status:",
+      kwColor: "",
+      textColor: "text-shiro/80",
+    },
+    {
+      indent: 2,
+      keyword: "",
+      text: '"available"',
+      kwColor: "",
+      textColor: "text-[#9ece6a]",
+    },
+    {
+      indent: 0,
+      keyword: "};",
+      text: "",
+      kwColor: "text-[#bb9af7]",
+      textColor: "",
+    },
   ];
 
   return (
@@ -74,7 +146,11 @@ function CodeVisual() {
               {i === lines.length - 1 && (
                 <motion.span
                   animate={{ opacity: [1, 1, 0, 0] }}
-                  transition={{ repeat: Infinity, duration: 1.5, times: [0, 0.5, 0.5, 1] }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: 1.5,
+                    times: [0, 0.5, 0.5, 1],
+                  }}
                   className="inline-block w-1.5 h-[14px] bg-shiro/70 ml-0.5 align-middle"
                 />
               )}
@@ -88,7 +164,7 @@ function CodeVisual() {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden px-6 pt-24 pb-24 md:pt-32 md:pb-32">
       {/* Dot pattern bg */}
       <div
         className="absolute inset-0 opacity-[0.025]"
@@ -109,7 +185,7 @@ export default function Hero() {
       {/* Left accent line */}
       <div className="absolute left-8 md:left-16 top-1/2 -translate-y-1/2 w-[1px] h-40 bg-gradient-to-b from-transparent via-beni/20 to-transparent hidden md:block" />
 
-      <div className="relative w-full max-w-6xl mx-auto px-6 py-24 md:py-32">
+      <div className="relative w-full max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* === Left Column === */}
           <div className="text-center lg:text-left">
@@ -146,8 +222,8 @@ export default function Hero() {
               className="mb-5"
             >
               <div className="text-base sm:text-lg md:text-xl text-hai font-medium leading-relaxed text-center lg:text-left">
-                <span className="text-beni">✦</span>{" "}
-                AI-Native Full-Stack Developer
+                <span className="text-beni">✦</span> AI-Native Full-Stack
+                Developer
                 <span className="text-hai/25 mx-2">|</span>
                 Tech Entrepreneur
               </div>
@@ -196,7 +272,9 @@ export default function Hero() {
                 className="group inline-flex items-center justify-center gap-2 px-6 py-3 border border-susu/40 text-shiro font-medium text-sm rounded-sm hover:border-beni/40 hover:bg-beni/5 transition-all duration-200"
               >
                 Get in Touch
-                <span className="group-hover:translate-x-0.5 transition-transform">→</span>
+                <span className="group-hover:translate-x-0.5 transition-transform">
+                  →
+                </span>
               </a>
             </motion.div>
 

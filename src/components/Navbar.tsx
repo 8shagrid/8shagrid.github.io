@@ -18,7 +18,10 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleMobileNav = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleMobileNav = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
     e.preventDefault();
     setIsOpen(false);
     const sectionId = href.replace("#", "");
@@ -40,7 +43,7 @@ export default function Navbar() {
         ([entry]) => {
           if (entry.isIntersecting) setActiveSection(id);
         },
-        { rootMargin: "-30% 0px -60% 0px", threshold: 0 }
+        { rootMargin: "-30% 0px -60% 0px", threshold: 0 },
       );
       observer.observe(el);
       observers.push(observer);
@@ -52,13 +55,13 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 px-6 transition-all duration-300",
         scrolled
           ? "bg-sumi/90 backdrop-blur-md border-b border-susu/30"
-          : "bg-transparent"
+          : "bg-transparent",
       )}
     >
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto h-14 md:h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
           <span className="text-lg font-bold text-shiro tracking-wide group-hover:text-beni transition-colors duration-200">
@@ -79,7 +82,7 @@ export default function Navbar() {
                   "text-sm transition-colors duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:h-[1.5px] after:bg-beni after:transition-all",
                   isActive
                     ? "text-shiro after:w-full"
-                    : "text-hai hover:text-shiro after:w-0 hover:after:w-full"
+                    : "text-hai hover:text-shiro after:w-0 hover:after:w-full",
                 )}
               >
                 {link.label}
@@ -114,7 +117,7 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-sumi/95 backdrop-blur-md border-b border-susu/30 overflow-hidden"
           >
-            <div className="px-6 py-4 flex flex-col gap-3">
+            <div className="max-w-6xl mx-auto py-4 flex flex-col gap-3">
               {navLinks.map((link) => {
                 const sectionId = link.href.replace("#", "");
                 const isActive = activeSection === sectionId;
@@ -125,7 +128,7 @@ export default function Navbar() {
                     onClick={(e) => handleMobileNav(e, link.href)}
                     className={cn(
                       "text-sm py-2 transition-colors",
-                      isActive ? "text-shiro" : "text-hai hover:text-shiro"
+                      isActive ? "text-shiro" : "text-hai hover:text-shiro",
                     )}
                   >
                     {link.label}
