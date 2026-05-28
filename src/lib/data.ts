@@ -51,7 +51,7 @@ export const products: Product[] = [
   },
   {
     title: "PejuangKampus.co.id",
-    role: "Programmer",
+    role: "Freelance Full-Stack Developer",
     description:
       "Platform bimbingan belajar online untuk persiapan PTN dan sekolah kedinasan. Mencakup ujian online, manajemen soal, leaderboard, dan sistem pembelajaran digital yang siap digunakan siswa dan tim operasional.",
     tech: [
@@ -70,8 +70,7 @@ export const products: Product[] = [
   },
   {
     title: "Seraya ERP",
-    role: "Solo Developer",
-    badge: "🏆 Solo Built",
+    role: "Owner & Full-Stack Developer",
     description:
       "Sistem ERP custom untuk operasional bisnis Seraya, dibangun solo dari nol hingga production. Mengelola dashboard, produksi, penjualan, cashflow, budgeting, bagi hasil, komisi reseller, audit logs, role-based access, analytics, dan reporting otomatis.",
     tech: [
@@ -90,7 +89,7 @@ export const products: Product[] = [
   },
   {
     title: "Seraya.my.id",
-    role: "Owner & Developer",
+    role: "Owner & Full-Stack Developer",
     description:
       "Website studio undangan digital dan fisik untuk pernikahan, ulang tahun, aqiqah, dan khitanan. Menawarkan 150+ tema siap pakai, proses pemesanan yang jelas, dan pengalaman klien dengan rating 4.9.",
     tech: ["HTML5", "CSS3", "JavaScript", "Lucide Icons", "Vercel"],
