@@ -151,7 +151,7 @@ function CodeVisual() {
                     duration: 1.5,
                     times: [0, 0.5, 0.5, 1],
                   }}
-                  className="inline-block w-1.5 h-[14px] bg-shiro/70 ml-0.5 align-middle"
+                  className="inline-block h-[18px] w-2 bg-shiro/75 ml-1 translate-y-0.5 align-middle"
                 />
               )}
             </motion.div>

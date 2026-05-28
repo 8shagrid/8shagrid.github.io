@@ -12,41 +12,37 @@ export default function Icon() {
         style={{
           width: "100%",
           height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
           background: "#0d0d12",
           borderRadius: "4px",
+          position: "relative",
         }}
       >
-        <div
+        <span
           style={{
-            display: "flex",
-            alignItems: "baseline",
-            gap: 1,
+            position: "absolute",
+            left: 7,
+            top: 3,
+            fontSize: 22,
+            fontWeight: 800,
+            color: "#f0ece4",
+            fontFamily: "Playfair Display, serif",
+            letterSpacing: "-0.5px",
+            lineHeight: 1,
           }}
         >
-          <span
-            style={{
-              fontSize: 22,
-              fontWeight: 800,
-              color: "#f0ece4",
-              fontFamily: "Playfair Display, serif",
-              letterSpacing: "-0.5px",
-            }}
-          >
-            D
-          </span>
-          <span
-            style={{
-              width: 4,
-              height: 4,
-              background: "#c53030",
-              borderRadius: "50%",
-              marginBottom: 4,
-            }}
-          />
-        </div>
+          D
+        </span>
+        <span
+          style={{
+            position: "absolute",
+            left: 23,
+            top: 21,
+            width: 4,
+            height: 4,
+            background: "#c53030",
+            borderRadius: "50%",
+          }}
+        />
       </div>
     ),
     { ...size }
