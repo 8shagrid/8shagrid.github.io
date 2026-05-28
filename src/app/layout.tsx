@@ -30,7 +30,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dirga.dev"),
+  metadataBase: new URL("https://dirgahalimsusilo.site"),
   title: "Dirga Halim Susilo — AI-Native Full-Stack Developer & Tech Entrepreneur",
   description:
     "S1 Data Science (GPA 3.77). Freelance developer & data specialist. Built 4 digital products including enterprise ERP. Based in Medan, Indonesia.",
@@ -83,7 +83,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Dirga Halim Susilo",
   jobTitle: "AI-Native Full-Stack Developer & Tech Entrepreneur",
-  url: "https://dirga.dev",
+  url: "https://dirgahalimsusilo.site",
   sameAs: [
     "https://github.com/8shagrid",
     "https://linkedin.com/in/dirgahalimsusilo",

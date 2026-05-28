@@ -161,7 +161,7 @@ export default function Image() {
             DIRGA<span style={{ color: "#c53030" }}>.</span>
           </span>
           <span style={{ fontSize: 14, color: "rgba(140, 140, 126, 0.4)" }}>
-            dirga.dev
+            dirgahalimsusilo.site
           </span>
         </div>
       </div>
