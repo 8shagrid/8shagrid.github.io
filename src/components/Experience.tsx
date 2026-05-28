@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Building2, CheckCircle2, MapPin } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 import Section from "./Section";
 import { experiences } from "@/lib/data";
@@ -15,11 +16,10 @@ export default function Experience() {
         description="Hands-on experience across freelance software development, data science, HR analytics, and academic research."
       />
 
-      <div className="relative">
-        {/* Timeline line */}
-        <div className="absolute left-0 top-2 bottom-2 w-[1px] bg-susu/30 hidden md:block" />
+      <div className="relative max-w-5xl">
+        <div className="absolute left-4 top-3 bottom-3 hidden w-px bg-gradient-to-b from-beni/50 via-susu/30 to-transparent md:block" />
 
-        <div className="space-y-10">
+        <div className="space-y-5 md:space-y-6">
           {experiences.map((exp, index) => (
             <motion.div
               key={`${exp.role}-${exp.company}`}
@@ -27,36 +27,58 @@ export default function Experience() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={viewportOnce}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="md:pl-8 relative"
+              className="relative grid gap-3 md:grid-cols-[180px_1fr] md:gap-8 md:pl-12"
             >
-              {/* Timeline dot */}
-              <div className="hidden md:block absolute left-[-4.5px] top-2 w-[9px] h-[9px] rounded-full bg-beni border-2 border-sumi" />
-
-              <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 mb-2">
-                <span className="text-xs text-beni font-medium whitespace-nowrap font-mono">
-                  {exp.period}
-                </span>
-                <div>
-                  <h3 className="text-base font-semibold text-shiro">
-                    {exp.role}
-                  </h3>
-                  <p className="text-sm text-hai">
-                    {exp.company} · {exp.location}
-                  </p>
-                </div>
+              <div className="absolute left-0 top-1.5 hidden h-8 w-8 items-center justify-center rounded-sm border border-beni/30 bg-sumi md:flex">
+                <span className="h-2 w-2 rounded-full bg-beni shadow-[0_0_18px_rgba(197,48,48,0.7)]" />
               </div>
 
-              <ul className="mt-2 space-y-1.5">
-                {exp.details.map((detail) => (
-                  <li
-                    key={detail}
-                    className="text-sm text-hai/70 leading-relaxed flex gap-2"
-                  >
-                    <span className="text-beni/40 mt-1 shrink-0">—</span>
-                    {detail}
-                  </li>
-                ))}
-              </ul>
+              <div className="md:pt-1">
+                <span className="inline-flex rounded-sm border border-beni/20 bg-beni/10 px-2.5 py-1 font-mono text-[11px] font-medium text-beni">
+                  {exp.period}
+                </span>
+              </div>
+
+              <article className="group relative overflow-hidden rounded-sm border border-susu/15 bg-tetsu/45 p-5 transition-all duration-300 hover:border-beni/25 hover:bg-tetsu/70 md:p-6">
+                <div className="absolute inset-y-0 left-0 w-[2px] bg-beni/0 transition-colors duration-300 group-hover:bg-beni/60" />
+
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                  <div className="min-w-0">
+                    <h3 className="text-base font-semibold leading-snug text-shiro md:text-lg">
+                      {exp.role}
+                    </h3>
+                    <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-hai/60">
+                      <span className="inline-flex items-center gap-1.5">
+                        <Building2 size={13} className="text-kin/70" />
+                        {exp.company}
+                      </span>
+                      <span className="inline-flex items-center gap-1.5">
+                        <MapPin size={13} className="text-beni/70" />
+                        {exp.location}
+                      </span>
+                    </div>
+                  </div>
+
+                  <span className="w-fit shrink-0 rounded-sm border border-susu/20 bg-sumi/60 px-2.5 py-1 text-[10px] uppercase tracking-[0.14em] text-hai/50">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </div>
+
+                <ul className="mt-5 grid gap-2.5">
+                  {exp.details.map((detail) => (
+                    <li
+                      key={detail}
+                      className="flex gap-2.5 text-sm leading-relaxed text-hai/75"
+                    >
+                      <CheckCircle2
+                        size={15}
+                        className="mt-0.5 shrink-0 text-take"
+                      />
+                      <span>{detail}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
             </motion.div>
           ))}
         </div>
