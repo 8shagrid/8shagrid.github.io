@@ -18,7 +18,17 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scrollspy — track which section is in view
+  const handleMobileNav = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setIsOpen(false);
+    const sectionId = href.replace("#", "");
+    setTimeout(() => {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 300);
+  };
   useEffect(() => {
     const sectionIds = navLinks.map((l) => l.href.replace("#", ""));
     const observers: IntersectionObserver[] = [];
@@ -112,7 +122,7 @@ export default function Navbar() {
                   <a
                     key={link.label}
                     href={link.href}
-                    onClick={() => setIsOpen(false)}
+                    onClick={(e) => handleMobileNav(e, link.href)}
                     className={cn(
                       "text-sm py-2 transition-colors",
                       isActive ? "text-shiro" : "text-hai hover:text-shiro"

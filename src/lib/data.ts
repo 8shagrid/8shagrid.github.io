@@ -51,8 +51,7 @@ export const products: Product[] = [
   },
   {
     title: "PejuangKampus.co.id",
-    role: "Solo Programmer",
-    badge: "🏆 Solo Built",
+    role: "Programmer",
     description:
       "Platform bimbel online persiapan PTN & sekolah kedinasan. Sistem ujian online, manajemen soal, leaderboard, dan pembelajaran — dikerjakan sendiri dari nol hingga produksi.",
     tech: [
