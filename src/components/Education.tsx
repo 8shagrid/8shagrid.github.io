@@ -17,7 +17,7 @@ export default function Education() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={viewportOnce}
         transition={{ duration: 0.5 }}
-        className="bg-tetsu/50 border border-susu/10 rounded-sm p-6"
+        className="bg-tetsu border border-susu/30 rounded-sm p-6"
       >
         <div className="flex items-start gap-4">
           <div className="p-2.5 bg-beni/10 border border-beni/20 rounded-sm shrink-0">
@@ -37,7 +37,7 @@ export default function Education() {
             </p>
 
             {/* Thesis */}
-            <div className="flex items-start gap-2 mb-4 p-3 bg-sumi/50 border border-susu/10 rounded-sm">
+            <div className="flex items-start gap-2 mb-4 p-3 bg-sumi border border-susu/20 rounded-sm">
               <BookOpen size={14} className="text-kin shrink-0 mt-0.5" />
               <p className="text-sm text-hai/80 leading-relaxed">
                 <span className="text-kin/80 font-medium">Skripsi: </span>
@@ -52,7 +52,7 @@ export default function Education() {
                   <span className="text-beni/40 mt-0.5 shrink-0 text-xs">
                     —
                   </span>
-                  <p className="text-xs text-hai/60 leading-relaxed">{ach}</p>
+                  <p className="text-xs text-hai leading-relaxed">{ach}</p>
                 </div>
               ))}
             </div>

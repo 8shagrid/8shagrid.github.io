@@ -63,7 +63,7 @@ export default function FeaturedProducts() {
               </div>
 
               {/* Description */}
-              <p className="text-sm text-hai/80 leading-relaxed mb-4">
+              <p className="text-sm text-hai leading-relaxed mb-4">
                 {product.description}
               </p>
 
@@ -72,7 +72,7 @@ export default function FeaturedProducts() {
                 {product.tech.map((t) => (
                   <span
                     key={t}
-                    className="text-[10px] px-2 py-0.5 bg-sumi border border-susu/20 text-hai rounded-sm"
+                    className="text-[10px] px-2 py-0.5 bg-sumi border border-susu/30 text-hai rounded-sm"
                   >
                     {t}
                   </span>

@@ -116,7 +116,7 @@ export default function Contact() {
                   ) : (
                     <Copy
                       size={14}
-                      className="text-hai/30 group-hover:text-hai/60 transition-colors"
+                      className="text-hai/45 group-hover:text-hai/60 transition-colors"
                     />
                   )}
                 </div>
@@ -165,7 +165,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-beni text-shiro font-medium text-sm rounded-sm hover:bg-beni-light transition-colors duration-200"
+            className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-beni text-[#f0ece4] font-medium text-sm rounded-sm hover:bg-beni-light transition-colors duration-200"
           >
             {formStatus === "sent" ? (
               <>

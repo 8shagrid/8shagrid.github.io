@@ -31,7 +31,7 @@ export default function Skills() {
               {group.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="text-xs px-3 py-1.5 bg-tetsu border border-susu/20 text-hai hover:text-shiro hover:border-beni/30 transition-colors duration-200 rounded-sm cursor-default"
+                  className="text-xs px-3 py-1.5 bg-tetsu border border-susu/40 text-hai hover:text-shiro hover:border-beni/50 transition-colors duration-200 rounded-sm cursor-default"
                 >
                   {skill}
                 </span>

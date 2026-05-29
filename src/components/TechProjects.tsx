@@ -32,7 +32,7 @@ export default function TechProjects() {
             transition={{ duration: 0.4, delay: index * 0.08 }}
             className="group relative"
           >
-            <div className="flex flex-col md:flex-row md:items-center gap-4 p-5 bg-tetsu/50 border border-susu/10 rounded-sm hover:border-beni/20 hover:bg-tetsu transition-all duration-300">
+            <div className="flex flex-col md:flex-row md:items-center gap-4 p-5 bg-tetsu border border-susu/30 rounded-sm hover:border-beni/30 hover:bg-tetsu transition-all duration-300">
               {/* Left accent line */}
               <div className="hidden md:block w-[2px] self-stretch bg-beni/0 group-hover:bg-beni/30 transition-colors duration-300 rounded-full" />
 
@@ -48,15 +48,15 @@ export default function TechProjects() {
                     </span>
                   )}
                 </div>
-                <p className="text-xs text-hai/70 mb-2">{project.type}</p>
-                <p className="text-sm text-hai/80 leading-relaxed mb-3">
+                <p className="text-xs text-hai mb-2">{project.type}</p>
+                <p className="text-sm text-hai leading-relaxed mb-3">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-1.5">
                   {project.tech.map((t) => (
                     <span
                       key={t}
-                      className="text-[10px] px-2 py-0.5 bg-sumi border border-susu/20 text-hai/60 rounded-sm"
+                      className="text-[10px] px-2 py-0.5 bg-sumi border border-susu/30 text-hai rounded-sm"
                     >
                       {t}
                     </span>

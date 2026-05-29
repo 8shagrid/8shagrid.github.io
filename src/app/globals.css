@@ -15,6 +15,8 @@
   --color-shiro: #f0ece4;
   --color-hai: #8c8c7e;
   --color-take: #4a6741;
+  --color-code-green: #9ece6a;
+  --color-code-purple: #bb9af7;
   --font-heading: "Playfair Display", "Noto Serif JP", serif;
   --font-body: "DM Sans", "Inter", sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
@@ -24,10 +26,67 @@
   --radius-lg: 6px;
 }
 
+:root {
+  color-scheme: dark;
+  --shadow-glow-beni: 0 0 18px rgba(197, 48, 48, 0.7);
+}
+
+html.light {
+  color-scheme: light;
+  --color-sumi:      #f4eee1;   /* Background (warm rich paper off-white) */
+  --color-tetsu:     #ffffff;   /* Surface/Card (pure white for distinct contrast) */
+  --color-susu:      #a69985;   /* Border/Hover (darker warm tan for visible boundaries) */
+  --color-beni:      #9c1c1c;   /* Primary Accent (richer crimson for high readability) */
+  --color-beni-light:#c53030;   /* Accent light */
+  --color-kin:       #8a6214;   /* Gold Highlight (darker gold for high contrast text) */
+  --color-kin-light: #ab791c;   /* Gold light */
+  --color-shiro:     #0e0d0f;   /* Text Primary (rich ink-black) */
+  --color-hai:       #2c2925;   /* Text Secondary (dark charcoal-warm gray) */
+  --color-take:      #264d2b;   /* Subtle/Muted (darker bamboo green) */
+  --color-code-green:   #246125;   /* Terminal green */
+  --color-code-purple:  #5e2fa6;   /* Terminal purple */
+  --shadow-glow-beni:   0 0 18px rgba(156, 28, 28, 0.4);
+}
+
+/* ================================================
+   Light Mode Explicit Overrides
+   Tailwind v4 @theme values are static at compile time.
+   We must override bg/text utilities via CSS for light mode.
+   ================================================ */
+html.light {
+  /* Text colors */
+  --tw-text-color-shiro: #0e0d0f;
+  --tw-text-color-hai: #2c2925;
+}
+
+/* Override bg-* and text-* Tailwind utility classes under html.light */
+html.light .bg-sumi { background-color: #f4eee1 !important; }
+html.light .bg-tetsu { background-color: #ffffff !important; }
+html.light .bg-susu  { background-color: #a69985 !important; }
+html.light .text-shiro { color: #0e0d0f !important; }
+html.light .text-hai   { color: #2c2925 !important; }
+html.light .text-kin   { color: #8a6214 !important; }
+html.light .text-take  { color: #264d2b !important; }
+html.light .text-beni  { color: #9c1c1c !important; }
+html.light .border-susu { border-color: #a69985 !important; }
+
+/* bg-sumi as child-nested surface (for thesis box etc.) */
+html.light [class*="bg-sumi\/"] { background-color: #ede5d4 !important; }
+html.light [class*="bg-tetsu\/"] { background-color: #f8f6f2 !important; }
+
+/* Hero name gradient — use solid text in light mode */
+html.light .hero-name { background: none !important; color: #0e0d0f !important; -webkit-text-fill-color: #0e0d0f !important; }
+
+/* Hero bottom fade — use light bg */
+html.light .hero-bottom-fade { background: linear-gradient(to top, #f4eee1, transparent) !important; }
+
+
+
 * { box-sizing: border-box; }
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--color-sumi);
 }
 
 body {
@@ -40,7 +99,7 @@ body {
 
 ::selection {
   background-color: var(--color-beni);
-  color: var(--color-shiro);
+  color: #f0ece4;
 }
 
 ::-webkit-scrollbar { width: 6px; }

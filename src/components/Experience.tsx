@@ -30,7 +30,7 @@ export default function Experience() {
               className="relative grid gap-3 md:grid-cols-[180px_1fr] md:gap-8 md:pl-12"
             >
               <div className="absolute left-0 top-1.5 hidden h-8 w-8 items-center justify-center rounded-sm border border-beni/30 bg-sumi md:flex">
-                <span className="h-2 w-2 rounded-full bg-beni shadow-[0_0_18px_rgba(197,48,48,0.7)]" />
+                <span className="h-2 w-2 rounded-full bg-beni shadow-[var(--shadow-glow-beni)]" />
               </div>
 
               <div className="md:pt-1">
@@ -39,7 +39,7 @@ export default function Experience() {
                 </span>
               </div>
 
-              <article className="group relative overflow-hidden rounded-sm border border-susu/15 bg-tetsu/45 p-5 transition-all duration-300 hover:border-beni/25 hover:bg-tetsu/70 md:p-6">
+              <article className="group relative overflow-hidden rounded-sm border border-susu/40 bg-tetsu p-5 transition-all duration-300 hover:border-beni/40 hover:bg-tetsu md:p-6">
                 <div className="absolute inset-y-0 left-0 w-[2px] bg-beni/0 transition-colors duration-300 group-hover:bg-beni/60" />
 
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
@@ -47,7 +47,7 @@ export default function Experience() {
                     <h3 className="text-base font-semibold leading-snug text-shiro md:text-lg">
                       {exp.role}
                     </h3>
-                    <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-hai/60">
+                    <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-hai">
                       <span className="inline-flex items-center gap-1.5">
                         <Building2 size={13} className="text-kin/70" />
                         {exp.company}
@@ -59,7 +59,7 @@ export default function Experience() {
                     </div>
                   </div>
 
-                  <span className="w-fit shrink-0 rounded-sm border border-susu/20 bg-sumi/60 px-2.5 py-1 text-[10px] uppercase tracking-[0.14em] text-hai/50">
+                  <span className="w-fit shrink-0 rounded-sm border border-susu/30 bg-sumi px-2.5 py-1 text-[10px] uppercase tracking-[0.14em] text-hai">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                 </div>
@@ -68,7 +68,7 @@ export default function Experience() {
                   {exp.details.map((detail) => (
                     <li
                       key={detail}
-                      className="flex gap-2.5 text-sm leading-relaxed text-hai/75"
+                      className="flex gap-2.5 text-sm leading-relaxed text-hai"
                     >
                       <CheckCircle2
                         size={15}

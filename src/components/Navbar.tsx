@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { navLinks, cvData } from "@/lib/data";
 import { cn } from "@/lib/utils";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -92,20 +93,24 @@ export default function Navbar() {
           <a
             href={cvData.url}
             download
-            className="text-sm px-4 py-2 border border-beni/50 text-beni hover:bg-beni hover:text-shiro transition-all duration-200 rounded-sm"
+            className="text-sm px-4 py-2 border border-beni/50 text-beni hover:bg-beni hover:text-[#f0ece4] transition-all duration-200 rounded-sm"
           >
             {cvData.label}
           </a>
+          <ThemeToggle />
         </div>
 
         {/* Mobile Toggle */}
-        <button
-          className="md:hidden p-2 text-hai hover:text-shiro transition-colors"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X size={20} /> : <Menu size={20} />}
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
+          <button
+            className="p-2 text-hai hover:text-shiro transition-colors"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}

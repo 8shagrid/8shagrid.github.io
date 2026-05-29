@@ -24,7 +24,7 @@ export default function Certifications() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={viewportOnce}
             transition={{ duration: 0.4, delay: index * 0.06 }}
-            className="group bg-tetsu/50 border border-susu/10 rounded-sm p-5 hover:border-kin/20 transition-colors duration-300"
+            className="group bg-tetsu border border-susu/30 rounded-sm p-5 hover:border-kin/30 transition-colors duration-300"
           >
             <div className="flex items-start gap-3">
               <Award size={16} className="text-kin shrink-0 mt-0.5" />
@@ -34,9 +34,9 @@ export default function Certifications() {
                 </h4>
                 <p className="text-xs text-hai mt-1">{cert.issuer}</p>
                 <div className="flex items-center gap-2 mt-2">
-                  <span className="text-[10px] text-hai/50">{cert.date}</span>
+                  <span className="text-[10px] text-hai">{cert.date}</span>
                   {cert.credentialId && (
-                    <span className="text-[10px] text-hai/30 font-mono">
+                    <span className="text-[10px] text-hai/60 font-mono">
                       {cert.credentialId.slice(0, 12)}...
                     </span>
                   )}

@@ -18,7 +18,7 @@ function CodeVisual() {
       indent: 0,
       keyword: "const",
       text: " developer",
-      kwColor: "text-[#bb9af7]",
+      kwColor: "text-code-purple",
       textColor: "text-shiro/60",
     },
     {
@@ -33,7 +33,7 @@ function CodeVisual() {
       keyword: "",
       text: '"Dirga Halim Susilo",',
       kwColor: "",
-      textColor: "text-[#9ece6a]",
+      textColor: "text-code-green",
     },
     {
       indent: 1,
@@ -47,21 +47,21 @@ function CodeVisual() {
       keyword: "",
       text: '["Next.js", "TypeScript",',
       kwColor: "",
-      textColor: "text-[#9ece6a]",
+      textColor: "text-code-green",
     },
     {
       indent: 2,
       keyword: "",
       text: ' "Python", "Supabase",',
       kwColor: "",
-      textColor: "text-[#9ece6a]",
+      textColor: "text-code-green",
     },
     {
       indent: 2,
       keyword: "",
       text: ' "TensorFlow", "Prisma"],',
       kwColor: "",
-      textColor: "text-[#9ece6a]",
+      textColor: "text-code-green",
     },
     {
       indent: 1,
@@ -75,7 +75,7 @@ function CodeVisual() {
       keyword: "",
       text: '"Full-Stack & AI Engineer",',
       kwColor: "",
-      textColor: "text-[#9ece6a]",
+      textColor: "text-code-green",
     },
     {
       indent: 1,
@@ -89,13 +89,13 @@ function CodeVisual() {
       keyword: "",
       text: '"available"',
       kwColor: "",
-      textColor: "text-[#9ece6a]",
+      textColor: "text-code-green",
     },
     {
       indent: 0,
       keyword: "};",
       text: "",
-      kwColor: "text-[#bb9af7]",
+      kwColor: "text-code-purple",
       textColor: "",
     },
   ];
@@ -110,15 +110,15 @@ function CodeVisual() {
       {/* Glow behind the card */}
       <div className="absolute -inset-[1px] bg-gradient-to-br from-beni/20 via-kin/10 to-transparent rounded-lg blur-sm" />
 
-      <div className="relative bg-sumi/90 border border-susu/20 rounded-lg overflow-hidden shadow-2xl">
+      <div className="relative bg-[#0d0d12] border border-[#252530]/40 rounded-lg overflow-hidden shadow-2xl">
         {/* Title bar */}
-        <div className="flex items-center gap-2 px-4 py-2.5 bg-tetsu border-b border-susu/10">
+        <div className="flex items-center gap-2 px-4 py-2.5 bg-[#1a1a22] border-b border-[#252530]/30">
           <div className="flex gap-1.5">
             <div className="w-2.5 h-2.5 rounded-full bg-beni/50" />
             <div className="w-2.5 h-2.5 rounded-full bg-kin/50" />
             <div className="w-2.5 h-2.5 rounded-full bg-take/50" />
           </div>
-          <span className="text-[10px] text-hai/30 ml-2 font-mono tracking-wider">
+          <span className="text-[10px] text-hai/40 ml-2 font-mono tracking-wider">
             developer.ts
           </span>
         </div>
@@ -170,7 +170,7 @@ export default function Hero() {
         className="absolute inset-0 opacity-[0.025]"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 1px 1px, #f0ece4 1px, transparent 0)",
+            "radial-gradient(circle at 1px 1px, var(--color-shiro) 1px, transparent 0)",
           backgroundSize: "44px 44px",
         }}
       />
@@ -180,7 +180,7 @@ export default function Hero() {
       <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-kin/[0.04] rounded-full blur-[100px] pointer-events-none" />
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-sumi to-transparent pointer-events-none z-10" />
+      <div className="hero-bottom-fade absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-sumi to-transparent pointer-events-none z-10" />
 
       {/* Left accent line */}
       <div className="absolute left-8 md:left-16 top-1/2 -translate-y-1/2 w-[1px] h-40 bg-gradient-to-b from-transparent via-beni/20 to-transparent hidden md:block" />
@@ -207,9 +207,9 @@ export default function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.08] mb-5 font-[family-name:var(--font-heading)] whitespace-normal sm:whitespace-nowrap"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.08] mb-5 font-[family-name:var(--font-heading)] whitespace-normal sm:whitespace-nowrap text-shiro"
             >
-              <span className="bg-gradient-to-r from-shiro via-shiro to-kin bg-clip-text text-transparent">
+              <span className="hero-name bg-gradient-to-r from-shiro via-shiro to-kin bg-clip-text [.dark_&]:text-transparent">
                 {heroData.name}
               </span>
             </motion.h1>
@@ -224,7 +224,7 @@ export default function Hero() {
               <div className="text-base sm:text-lg md:text-xl text-hai font-medium leading-relaxed text-center lg:text-left">
                 <span className="text-beni">✦</span> Full-Stack Developer & AI
                 Engineer
-                <span className="text-hai/25 mx-2">|</span>
+                <span className="text-hai/50 mx-2">|</span>
                 Data-Driven Product Builder
               </div>
             </motion.div>
@@ -234,7 +234,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-sm md:text-base text-hai/60 max-w-lg mx-auto lg:mx-0 leading-relaxed mb-2"
+              className="text-sm md:text-base text-hai max-w-lg mx-auto lg:mx-0 leading-relaxed mb-2"
             >
               {heroData.tagline}
             </motion.p>
@@ -244,7 +244,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.35 }}
-              className="flex items-center justify-center lg:justify-start gap-1.5 text-xs text-hai/40 mb-10"
+              className="flex items-center justify-center lg:justify-start gap-1.5 text-xs text-hai mb-10"
             >
               <MapPin size={12} />
               {heroData.location}
@@ -259,7 +259,7 @@ export default function Hero() {
             >
               <a
                 href="#products"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-3 bg-beni text-shiro font-medium text-sm rounded-sm hover:bg-beni-light transition-all duration-200 shadow-lg shadow-beni/20"
+                className="group inline-flex items-center justify-center gap-2 px-6 py-3 bg-beni text-[#f0ece4] font-medium text-sm rounded-sm hover:bg-beni-light transition-all duration-200 shadow-lg shadow-beni/10"
               >
                 Explore Projects
                 <ChevronDown
@@ -269,7 +269,7 @@ export default function Hero() {
               </a>
               <a
                 href="#contact"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-3 border border-susu/40 text-shiro font-medium text-sm rounded-sm hover:border-beni/40 hover:bg-beni/5 transition-all duration-200"
+                className="group inline-flex items-center justify-center gap-2 px-6 py-3 border border-susu text-shiro font-medium text-sm rounded-sm hover:border-beni hover:bg-beni/5 transition-all duration-200"
               >
                 Start a Project
                 <span className="group-hover:translate-x-0.5 transition-transform">
@@ -297,7 +297,7 @@ export default function Hero() {
                     <div className="text-lg sm:text-xl md:text-2xl font-bold text-kin font-[family-name:var(--font-heading)]">
                       {stat.value}
                     </div>
-                    <div className="text-[9px] sm:text-[10px] text-hai/40 uppercase tracking-wider mt-1 whitespace-nowrap">
+                    <div className="text-[9px] sm:text-[10px] text-hai uppercase tracking-wider mt-1 whitespace-nowrap">
                       {stat.label}
                     </div>
                   </div>
@@ -326,7 +326,7 @@ export default function Hero() {
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          className="flex flex-col items-center gap-1 text-hai/25"
+          className="flex flex-col items-center gap-1 text-hai"
         >
           <span className="text-[9px] uppercase tracking-[0.3em]">Scroll</span>
           <ChevronDown size={16} />
