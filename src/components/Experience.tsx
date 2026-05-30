@@ -17,7 +17,7 @@ export default function Experience() {
       />
 
       <div className="relative max-w-5xl">
-        <div className="absolute left-4 top-3 bottom-3 hidden w-px bg-gradient-to-b from-beni/50 via-susu/30 to-transparent md:block" />
+        <div className="absolute left-4 top-3 bottom-3 hidden w-px bg-linear-to-b from-beni/50 via-susu/30 to-transparent md:block" />
 
         <div className="space-y-5 md:space-y-6">
           {experiences.map((exp, index) => (
@@ -30,7 +30,7 @@ export default function Experience() {
               className="relative grid gap-3 md:grid-cols-[180px_1fr] md:gap-8 md:pl-12"
             >
               <div className="absolute left-0 top-1.5 hidden h-8 w-8 items-center justify-center rounded-sm border border-beni/30 bg-sumi md:flex">
-                <span className="h-2 w-2 rounded-full bg-beni shadow-[var(--shadow-glow-beni)]" />
+                <span className="h-2 w-2 rounded-full bg-beni shadow-(--shadow-glow-beni)" />
               </div>
 
               <div className="md:pt-1">

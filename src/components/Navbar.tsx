@@ -93,7 +93,7 @@ export default function Navbar() {
           <a
             href={cvData.url}
             download
-            className="text-sm px-4 py-2 border border-beni/50 text-beni hover:bg-beni hover:text-[#f0ece4] transition-all duration-200 rounded-sm"
+            className="text-sm px-4 py-2 border border-beni/50 text-beni hover:bg-beni hover:text-shiro transition-all duration-200 rounded-sm"
           >
             {cvData.label}
           </a>

@@ -144,11 +144,11 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full bg-sumi text-shiro font-[family-name:var(--font-body)]">
+      <body className="min-h-full bg-sumi text-shiro font-body">
         {/* Skip to main content */}
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[60] focus:px-4 focus:py-2 focus:bg-beni focus:text-[#f0ece4] focus:rounded-sm focus:text-sm"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-60 focus:px-4 focus:py-2 focus:bg-beni focus:text-shiro focus:rounded-sm focus:text-sm"
         >
           Skip to main content
         </a>

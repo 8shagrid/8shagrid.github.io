@@ -108,11 +108,11 @@ function CodeVisual() {
       className="relative w-full max-w-sm mx-auto"
     >
       {/* Glow behind the card */}
-      <div className="absolute -inset-[1px] bg-gradient-to-br from-beni/20 via-kin/10 to-transparent rounded-lg blur-sm" />
+      <div className="absolute -inset-px bg-linear-to-br from-beni/20 via-kin/10 to-transparent rounded-lg blur-sm" />
 
-      <div className="relative bg-[#0d0d12] border border-[#252530]/40 rounded-lg overflow-hidden shadow-2xl">
+      <div className="relative bg-sumi border border-susu/40 rounded-lg overflow-hidden shadow-2xl">
         {/* Title bar */}
-        <div className="flex items-center gap-2 px-4 py-2.5 bg-[#1a1a22] border-b border-[#252530]/30">
+        <div className="flex items-center gap-2 px-4 py-2.5 bg-tetsu border-b border-susu/30">
           <div className="flex gap-1.5">
             <div className="w-2.5 h-2.5 rounded-full bg-beni/50" />
             <div className="w-2.5 h-2.5 rounded-full bg-kin/50" />
@@ -176,14 +176,14 @@ export default function Hero() {
       />
 
       {/* Ambient glow orbs */}
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-beni/[0.04] rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-kin/[0.04] rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-beni/4 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-kin/4 rounded-full blur-[100px] pointer-events-none" />
 
       {/* Bottom fade */}
-      <div className="hero-bottom-fade absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-sumi to-transparent pointer-events-none z-10" />
+      <div className="hero-bottom-fade absolute bottom-0 left-0 right-0 h-40 bg-linear-to-t from-sumi to-transparent pointer-events-none z-10" />
 
       {/* Left accent line */}
-      <div className="absolute left-8 md:left-16 top-1/2 -translate-y-1/2 w-[1px] h-40 bg-gradient-to-b from-transparent via-beni/20 to-transparent hidden md:block" />
+      <div className="absolute left-8 md:left-16 top-1/2 -translate-y-1/2 w-px h-40 bg-linear-to-b from-transparent via-beni/20 to-transparent hidden md:block" />
 
       <div className="relative w-full max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -207,9 +207,9 @@ export default function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.08] mb-5 font-[family-name:var(--font-heading)] whitespace-normal sm:whitespace-nowrap text-shiro"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.08] mb-5 font-heading whitespace-normal sm:whitespace-nowrap text-shiro"
             >
-              <span className="hero-name bg-gradient-to-r from-shiro via-shiro to-kin bg-clip-text [.dark_&]:text-transparent">
+              <span className="hero-name bg-linear-to-r from-shiro via-shiro to-kin bg-clip-text in-[.dark]:text-transparent">
                 {heroData.name}
               </span>
             </motion.h1>
@@ -259,7 +259,7 @@ export default function Hero() {
             >
               <a
                 href="#products"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-3 bg-beni text-[#f0ece4] font-medium text-sm rounded-sm hover:bg-beni-light transition-all duration-200 shadow-lg shadow-beni/10"
+                className="group inline-flex items-center justify-center gap-2 px-6 py-3 bg-beni text-shiro font-medium text-sm rounded-sm hover:bg-beni-light transition-all duration-200 shadow-lg shadow-beni/10"
               >
                 Explore Projects
                 <ChevronDown
@@ -294,7 +294,7 @@ export default function Hero() {
                   className="flex items-center"
                 >
                   <div className="text-center px-2 sm:px-3 md:px-4">
-                    <div className="text-lg sm:text-xl md:text-2xl font-bold text-kin font-[family-name:var(--font-heading)]">
+                    <div className="text-lg sm:text-xl md:text-2xl font-bold text-kin font-heading">
                       {stat.value}
                     </div>
                     <div className="text-[9px] sm:text-[10px] text-hai uppercase tracking-wider mt-1 whitespace-nowrap">
@@ -302,7 +302,7 @@ export default function Hero() {
                     </div>
                   </div>
                   {i < stats.length - 1 && (
-                    <div className="w-[1px] h-6 sm:h-8 bg-susu/20" />
+                    <div className="w-px h-6 sm:h-8 bg-susu/20" />
                   )}
                 </motion.div>
               ))}

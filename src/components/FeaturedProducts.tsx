@@ -31,7 +31,7 @@ export default function FeaturedProducts() {
             <div className="absolute top-0 left-0 right-0 z-10 h-[2px] bg-beni scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
 
             {/* Product Screenshot */}
-            <div className="relative aspect-[16/10] overflow-hidden bg-sumi">
+            <div className="relative aspect-16/10 overflow-hidden bg-sumi">
               <Image
                 src={product.image}
                 alt={product.title}
@@ -41,7 +41,7 @@ export default function FeaturedProducts() {
                 loading={index === 0 ? "eager" : "lazy"}
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-tetsu via-tetsu/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-linear-to-t from-tetsu via-tetsu/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
 
             <div className="p-6">

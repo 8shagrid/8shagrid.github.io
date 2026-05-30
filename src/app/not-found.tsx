@@ -7,7 +7,7 @@ export default function NotFound() {
         <p className="text-beni text-sm font-medium tracking-[0.2em] uppercase mb-4">
           404
         </p>
-        <h1 className="text-4xl md:text-5xl font-bold text-shiro mb-4 font-[family-name:var(--font-heading)]">
+        <h1 className="text-4xl md:text-5xl font-bold text-shiro mb-4 font-heading">
           Page Not Found
         </h1>
         <p className="text-hai mb-8 leading-relaxed">
@@ -16,7 +16,7 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/"
-            className="px-6 py-3 bg-beni text-[#f0ece4] font-medium text-sm rounded-sm hover:bg-beni-light transition-colors duration-200"
+            className="px-6 py-3 bg-beni text-shiro font-medium text-sm rounded-sm hover:bg-beni-light transition-colors duration-200"
           >
             Back to Home
           </Link>
