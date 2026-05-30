@@ -337,11 +337,11 @@ export const certifications = [
 
 // --- Contact ---
 export const contactData = {
-  email: "halimdirga8@gmail.com",
+  email: "dirgahalimsusilo@gmail.com",
   phone: "+6282367453590",
   linkedin: "linkedin.com/in/dirgahalimsusilo",
   github: "github.com/8shagrid",
-  website: "8shagrid.github.io",
+  website: "dirgahalimsusilo.site",
 };
 
 // --- CV Download ---
