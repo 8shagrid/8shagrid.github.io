@@ -6,7 +6,7 @@ import { heroData } from "@/lib/data";
 
 const stats = [
   { value: "3+", label: "Years Experience" },
-  { value: "10+", label: "Projects Delivered" },
+  { value: "25+", label: "Projects Delivered" },
   { value: "4", label: "Products Launched" },
   { value: "1K+", label: "Users Served" },
 ];
